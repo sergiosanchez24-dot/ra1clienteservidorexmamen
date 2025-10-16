@@ -33,44 +33,29 @@ cliente/
 
 ## 🧪 Ejercicios propuestos
 
-### 🔹 Ejercicio 1: Mostrar los tres últimos productos en la página de inicio
-- Modifica `index.html` y crea un contenedor donde se mostrarán los **3 últimos productos** disponibles.
-- Usa `fetch()` para obtener los datos de la API (`api.js` ya incluye las funciones necesarias).
+
+### 🔹 Ejercicio 1: Mejorar la interfaz de productos y productos
+- Añade la img en la interfaz, es necesario realizar previamente el ejercicio de servidor: 🔹 Ejercicio 1: Añadir nuevos campos al JSON, img y categoria
+
+---
+
+### 🔹 Ejercicio 2: Mostrar solo tres productos en la pagina de inicio
+- Modifica `index.html` y crea un contenedor donde se mostrarán solo **3  productos** disponibles.
 - Muestra los productos con imagen, nombre y precio, dentro de **tarjetas de Bootstrap**.
 
 📍 *Pista:*  
-Puedes reutilizar la función `obtenerProductos()` del archivo `api.js` y recorrer el array con `.slice(-3)` para obtener los tres últimos elementos.
+Puedes reutilizar el código de productos.js y por medio de un contador + break solo mostrar 3 productos. Copia la función y añadela a un nuevo index.js
+
 
 ---
 
-### 🔹 Ejercicio 2: Mejorar la interfaz del carrito
-- Añade un botón en cada producto dentro de `carrito.html` que permita **eliminar ese producto individualmente**.
-- Actualiza el total automáticamente tras borrar un producto.
+### 🔹 Ejercicio 3: Mostrar cantidad de productos en la pagina del carrito
+- Hay una etiqueta en la página del carrito.html llamada Carrito (), soluciona el código para que  desde carrito.js carge entre paréntesis el total de productos añadido al carrito (por ejemplo: `Carrito (3)`), en el caso de no tener productos debe mostrar Carrito(0)
+- Pista, GetElementById
+
 
 ---
 
-### 🔹 Ejercicio 3: Mostrar cantidad de productos en el icono del carrito
-- En la barra de navegación (navbar), muestra junto al botón "Carrito" la cantidad de productos añadidos (por ejemplo: `Carrito (3)`).
-- Usa el contenido de `localStorage` para contar los productos.
-
----
-
-### 🔹 Ejercicio 4 (opcional): Filtrar productos por precio o nombre
-- Añade en `productos.html` un campo de texto y un botón "Filtrar".
-- Al escribir en el campo, solo deben mostrarse los productos que coincidan con el texto buscado o que estén por debajo de un precio determinado.
-
----
-
-## 🧠 Puntuación orientativa (total 10 puntos)
-| Apartado | Descripción | Puntos |
-|-----------|--------------|--------|
-| Estructura HTML + Bootstrap | Uso adecuado de componentes y estructura responsive | 2 |
-| Uso de fetch() y carga dinámica de datos | Llamadas correctas a la API y renderizado dinámico | 3 |
-| Manipulación del DOM | Interactividad, eventos, y visualización de datos | 2 |
-| Gestión de carrito (localStorage) | Añadir, eliminar y actualizar | 2 |
-| Código limpio y funcional | Buenas prácticas, comentarios y legibilidad | 1 |
-
----
 
 ## 🧩 Recomendaciones
 - Mantén las funciones en archivos JS separados según su finalidad.

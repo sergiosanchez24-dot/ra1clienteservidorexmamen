@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     card.className = "col-md-4";
     card.innerHTML = `
       <div class="card h-100 shadow-sm">
-        <img src="${p.imagen}" class="card-img-top" alt="${p.nombre}">
         <div class="card-body text-center">
           <h5 class="card-title">${p.nombre}</h5>
           <p class="card-text">${p.descripcion}</p>
