@@ -45,39 +45,38 @@ Su función es devolver un **listado de productos** o **un producto específico*
 
 ---
 
-### 🔹 Ejercicio 2: Crear un filtro por precio máximo
+### 🔹 Ejercicio 3: Recorrer un JSON y mostrarlo por terminal
+
+
+- Comprobar que sabes leer y recorrer datos JSON en PHP utilizando foreach.
+
+- Instrucciones:
+
+Moidifica la  función llamada mostrarProductosJSON() en el archivo api.php.
+
+Dentro de la función:
+
+Carga el JSON del array $productos con json_encode().
+
+Convierte ese JSON de nuevo a un array asociativo con json_decode().
+
+Recorre el array resultante con foreach y muestra los nombres y precios de cada producto por pantalla (solo en modo texto, no en JSON).
+
+Para probarlo llamaramos a la API: `http://localhost/ra1clienteservidorexmamen/servidor/api.php?modo=texto
+---
+
+### 🔹 Ejercicio 4: Filtrado de productos por GET
 - Modifica el código para que, si el usuario pasa un parámetro `max` (por ejemplo `?max=30`), la API devuelva **solo los productos cuyo precio sea menor o igual a ese valor**.
 - Ejemplo:  
-  `GET http://localhost/tienda-online/servidor/api.php?max=30`
+  `GET http://localhost/ra1clienteservidorexmamen/servidor/api.php?max=30`
 
 📍 *Pista:*  
-Puedes usar `array_filter($productos, fn($p) => $p['precio'] <= $max)`.
+Puedes usar `array_filter($productos, fn($p) => $p['precio'] <= $max)`. 
+Ejemplo:  $productosFiltrados = array_filter($productos, fn($p) => $p['precio'] <= $max);
 
 ---
 
-### 🔹 Ejercicio 3: Añadir encabezado con código de estado HTTP
-- Devuelve un código `404` si el producto no existe.  
-- Devuelve un código `200` si la respuesta es correcta.
-
----
-
-### 🔹 Ejercicio 4 (opcional): Permitir peticiones POST para añadir productos
-- Usa `file_get_contents('php://input')` para leer los datos enviados en formato JSON.
-- Añade el nuevo producto al array y devuélvelo como respuesta.
-
----
-
-## 🧠 Puntuación orientativa (total 10 puntos)
-| Apartado | Descripción | Puntos |
-|-----------|--------------|--------|
-| Estructura y comprensión del código PHP | Claridad y organización del script | 2 |
-| JSON y encabezados HTTP | Correcta salida y codificación de datos | 3 |
-| Filtros o parámetros GET | Implementación funcional y validación | 3 |
-| Ampliación (POST u otros métodos) | Capacidad de mejora o extensión | 2 |
-
----
 
 ## 🧩 Recomendaciones
 - No es necesario conectar a una base de datos real, solo trabajar con arrays.
-- Prueba tus endpoints directamente en el navegador o con herramientas como **Postman** o **curl**.
 - Comprueba que el archivo devuelva siempre un JSON válido (`jsonlint.com` puede ayudarte).
