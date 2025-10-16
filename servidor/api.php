@@ -23,7 +23,7 @@ $productos = [
         "descripcion" => "Zapatillas ligeras y cómodas para el día a día.",
         "precio" => 45.50,
         "imagen" => "https://via.placeholder.com/400x300?text=Zapatillas"
-    ]
+    ],
 ];
 
 if (isset($_GET['id'])) {
