@@ -34,9 +34,14 @@ Su función es devolver un **listado de productos** o **un producto específico*
 
 ## 🧪 Ejercicios propuestos
 
-### 🔹 Ejercicio 1: Añadir un nuevo producto
-- Agrega un nuevo producto al array `$productos`.
-- Debe contener las claves: `id`, `nombre`, `descripcion`, `precio` e `imagen`.
+### 🔹 Ejercicio 1: Añadir nuevos campos al JSON, img y categoria
+- Agrega un nuevo campo JSON llamado `img` y `categoria`
+- Para el campo img busca imagenes de prueba en Google.
+
+---
+
+### 🔹 Ejercicio 2: Añade nuevos productos al JSON, en total 6 nuevos productos
+- Añade nuevos productos.
 
 ---
 
