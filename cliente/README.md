@@ -30,32 +30,52 @@ cliente/
 
 
 ---
-
 ## 🧪 Ejercicios propuestos
 
+### 🔹 Ejercicio 1: Cambiar el estilo de las tarjetas de productos
+- En el archivo `productos.js`, modifica mediante **JavaScript** el estilo visual de las tarjetas (`card`) que muestran los productos.  
+- Puedes cambiar el **color de fondo**, el **tamaño de la fuente** o cualquier otro aspecto visual, pero debe apreciarse un cambio visible.  
+- Los elementos que debes modificar son:
+  - `.card`
+  - `.card-title`
+  - `.card-text`
 
-### 🔹 Ejercicio 1: Mejorar la interfaz de productos y productos
-- Añade la img en la interfaz, es necesario realizar previamente el ejercicio de servidor: 🔹 Ejercicio 1: Añadir nuevos campos al JSON, img y categoria
+📍 *Objetivo:* comprobar que dominas la manipulación del DOM desde JavaScript.
 
 ---
 
-### 🔹 Ejercicio 2: Mostrar solo tres productos en la pagina de inicio
-- Modifica `index.html` y crea un contenedor donde se mostrarán solo **3  productos** disponibles.
-- Muestra los productos con imagen, nombre y precio, dentro de **tarjetas de Bootstrap**.
+### 🔹 Ejercicio 2: Mejorar la interfaz de productos
+- Mejora la interfaz visual de `productos.html` para que, además de los datos ya mostrados, aparezcan **la imagen y la categoría** de cada producto.  
+- Es necesario realizar previamente el ejercicio del **servidor** correspondiente:  
+  **“Ejercicio 1: Añadir nuevos campos al JSON (img y categoría)”**.
+- Utiliza componentes de **Bootstrap** para mantener un diseño atractivo y ordenado.
+
+📍 *Objetivo:* mostrar datos adicionales de la API en el frontend y aplicar estilos coherentes.
+
+---
+
+### 🔹 Ejercicio 3: Mostrar solo tres productos en la página de inicio
+- Modifica `index.html` para crear un contenedor que muestre únicamente **tres productos** disponibles.  
+- Cada producto debe visualizarse en una **tarjeta de Bootstrap** con su imagen, nombre y precio.
+- Crea un nuevo archivo `index.js` donde copiarás la función de carga de productos (basada en `productos.js`) y usa un **contador** o un `break` para limitar la visualización a tres elementos.
 
 📍 *Pista:*  
-Puedes reutilizar el código de productos.js y por medio de un contador + break solo mostrar 3 productos. Copia la función y añadela a un nuevo index.js
+Puedes reutilizar la función `obtenerProductos()` y añadir una condición que corte el bucle tras mostrar tres productos.
 
-
----
-
-### 🔹 Ejercicio 3: Mostrar cantidad de productos en la pagina del carrito
-- Hay una etiqueta en la página del carrito.html llamada Carrito (), soluciona el código para que  desde carrito.js carge entre paréntesis el total de productos añadido al carrito (por ejemplo: `Carrito (3)`), en el caso de no tener productos debe mostrar Carrito(0)
-- Pista, GetElementById
-
+📍 *Objetivo:* practicar la reutilización de código y el control de bucles en el renderizado dinámico.
 
 ---
 
+### 🔹 Ejercicio 4: Mostrar cantidad de productos en el carrito
+- En `carrito.html`, existe un texto “Carrito ()”.  
+  Modifica el código de `carrito.js` para que, al cargar la página, se actualice automáticamente el número de productos entre paréntesis.  
+  Por ejemplo:
+  - Si hay tres productos: `Carrito (3)`
+  - Si no hay ninguno: `Carrito (0)`
+- Utiliza `document.getElementById()` o un método equivalente del DOM para actualizar el texto.
+
+
+---
 
 ## 🧩 Recomendaciones
 - Mantén las funciones en archivos JS separados según su finalidad.

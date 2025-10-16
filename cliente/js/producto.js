@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   contenedor.innerHTML = `
     <div class="card mx-auto shadow" style="max-width: 500px;">
-      <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+    
       <div class="card-body">
         <h3 class="card-title">${producto.nombre}</h3>
         <p class="card-text">${producto.descripcion}</p>
