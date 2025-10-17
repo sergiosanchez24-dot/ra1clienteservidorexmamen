@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const card = document.createElement('div');
     card.className = "col-md-4";
     card.innerHTML = `
-      <div class="card h-100 shadow-sm">
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
         <div class="card-body text-center">
           <h5 class="card-title">${p.nombre}</h5>
           <p><img id="img" style="width: 34%;" src="https://clientes.oxfamintermon.org/643-large_default/camiseta-hombre-lisa-algorg-blanca-s.jpg"/></p>
