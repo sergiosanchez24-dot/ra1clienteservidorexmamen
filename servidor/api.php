@@ -8,18 +8,24 @@ $productos = [
         "nombre" => "Camiseta básica",
         "descripcion" => "Camiseta de algodón 100% en varios colores.",
         "precio" => 12.99
+        "img" => "https://clientes.oxfamintermon.org/643-large_default/camiseta-hombre-lisa-algorg-blanca-s.jpg",
+        "categoria" => "Camisetas"
     ],
     [
         "id" => 2,
         "nombre" => "Pantalón vaquero",
         "descripcion" => "Pantalón de mezclilla azul clásico.",
         "precio" => 29.95
+        "img" => "https://gusgusboutique.es/wp-content/uploads/2023/10/Vaqueros-azul-bajo-deshilachado-Salsa-Jeans-online.jpg",
+        "categoria" => "Pantalones"
     ],
     [
         "id" => 3,
         "nombre" => "Zapatillas deportivas",
         "descripcion" => "Zapatillas ligeras y cómodas para el día a día.",
         "precio" => 45.50
+        "img" => "https://www.calzadoshermi.com/50433-large_default/zapatillas-ligeras-confort-hombre-9870c.jpg",
+        "categoria" => "Zapatos"
     ],
 ];
 
